@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="0dp">
+
+
+    <!-- BottomAppBar -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        tools:context=".MainScreenActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnForums"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/rounder_tres"
+            android:backgroundTint="@color/ultra_pastel_yellow"
+            android:text="Foros Comunitarios"
+            android:textAllCaps="false"
+            android:elevation="1dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnResourcesDirectory"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:elevation="1dp"
+            android:background="@drawable/rounder_tres"
+            android:backgroundTint="@color/ultra_pastel_yellow"
+            android:drawablePadding="15dp"
+            android:text="Directorio de Recursos"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnForums" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnReportProblem"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:elevation="1dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/rounder_tres"
+            android:backgroundTint="@color/ultra_pastel_yellow"
+            android:drawablePadding="15dp"
+            android:text="Reportar un problema"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnResourcesDirectory" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnTakeSurvey"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:elevation="1dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/rounder_tres"
+            android:backgroundTint="@color/ultra_pastel_yellow"
+            android:drawablePadding="15dp"
+            android:text="Participar en una encuesta"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnReportProblem" />
+
+        <RelativeLayout
+            android:id="@+id/rlForums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            app:layout_constraintStart_toStartOf="@id/btnForums"
+            app:layout_constraintTop_toTopOf="@id/btnForums">
+
+            <ImageView
+                android:id="@+id/imageViewForums"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="-15dp"
+                android:src="@drawable/ic_a" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlResourcesDirectory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            app:layout_constraintStart_toStartOf="@id/btnResourcesDirectory"
+            app:layout_constraintTop_toTopOf="@id/btnResourcesDirectory">
+
+            <ImageView
+                android:id="@+id/imageViewDirectory"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="-15dp"
+                android:src="@drawable/ic_b" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlReportProblem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            app:layout_constraintStart_toStartOf="@id/btnReportProblem"
+            app:layout_constraintTop_toTopOf="@id/btnReportProblem">
+
+            <ImageView
+                android:id="@+id/imageViewProblem"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="-15dp"
+                android:src="@drawable/ic_c" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlTakeSurvey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            app:layout_constraintStart_toStartOf="@id/btnTakeSurvey"
+            app:layout_constraintTop_toTopOf="@id/btnTakeSurvey">
+
+            <ImageView
+                android:id="@+id/imageViewSurvey"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="-15dp"
+                android:src="@drawable/ic_d" />
+
+        </RelativeLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnReports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="104dp"
+            android:contentDescription="Ver Reportes"
+            android:src="@drawable/ic_reports"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:fabAlignmentMode="center"
+        app:backgroundTint="@color/pinky"
+        tools:ignore="BottomAppBar">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu="@menu/bottom_navigation_menu"
+            app:backgroundTint="@color/pinky"/>
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+</RelativeLayout>

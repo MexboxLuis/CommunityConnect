@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="verdecito">#45B05C</color>
+    <color name="light_gray">#a4b1ab</color>
+    <color name="your_link_color">#2196F3</color>
+    <color name="gray">#808080</color>
+    <color name="pastel_yellow">#CFF1BF</color>
+    <color name="ultra_pastel_yellow">#F8FFCC</color>
+    <color name="pinky">#F5F5DC</color>
+    <color name="color1">#F8FFCC</color>
+    <color name="color2">#CBE5FE</color>
+    <color name="color3">#F9B5C4</color>
+    <color name="color4">#A8CD9F</color>
+    <color name="reportHeaderColor">#F4FF9E</color>
+    <color name="reportPinkColor">#FFC8D5</color>
+    <color name="greenButton">#B9FF9A</color>
+</resources>

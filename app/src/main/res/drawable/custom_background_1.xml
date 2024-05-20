@@ -1,0 +1,5 @@
+<!-- custom_button_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="20dp"/> <!-- Esto redondeará los bordes, ajusta el radio según lo desees -->
+    <solid android:color="#9bfab0"/> <!-- Este es el color de fondo del botón -->
+</shape>

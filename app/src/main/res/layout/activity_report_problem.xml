@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportProblemActivity">
+
+    <!-- Contenedor del título -->
+    <RelativeLayout
+        android:id="@+id/title_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reportar un problema"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_below="@id/imageView"
+            android:textAlignment="center"
+            android:background="@color/reportHeaderColor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"/>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_container">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <!-- Layout para la categoría y su Spinner -->
+            <LinearLayout
+                android:id="@+id/layout_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:background="@color/reportPinkColor"
+                >
+
+                <TextView
+                    android:id="@+id/text_view_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Escoja la categoría de su reporte"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/spiner_border"
+
+
+
+                    />
+            </LinearLayout>
+
+            <!-- Layout para la fecha y sus Spinners -->
+            <LinearLayout
+                android:id="@+id/layout_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/layout_category"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:background="@color/reportPinkColor">
+
+                <TextView
+                    android:id="@+id/text_view_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha del reporte"
+                    android:textSize="14sp"
+                    android:layout_marginStart="16dp"/>
+
+                <!-- Spinners para el día, mes y año -->
+                <Spinner
+                    android:id="@+id/spinner_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/spiner_border"
+                    android:dropDownHeight="10dp"
+
+                    />
+
+                <Spinner
+                    android:id="@+id/spinner_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spiner_border"
+                    android:layout_marginStart="8dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinner_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spiner_border"
+                    android:layout_marginStart="8dp"
+                    />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/edit_text_report"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/layout_date"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="16dp"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:gravity="center"
+                android:hint="Escriba aquí su reporte"
+                android:background="@drawable/edit_text_border"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="42dp"
+                android:text="Enviar"
+                android:layout_below="@id/edit_text_report"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_report"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
