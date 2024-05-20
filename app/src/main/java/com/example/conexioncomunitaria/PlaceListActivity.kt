@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.conexioncomunitaria.model.AuthManager
 import com.google.android.material.bottomappbar.BottomAppBar
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -23,7 +24,7 @@ class PlaceListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_place_list)
 
-
+        val authManager = AuthManager()
         val categoryIndex = intent.getIntExtra("CATEGORY_INDEX", -1)
 
         val backgroundColor = when (categoryIndex) {
@@ -59,17 +60,30 @@ class PlaceListActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = PlaceListAdapter(places, backgroundColor)
 
-        bottomNavigationView = findViewById(R.id.bottomNavigationView)
+        val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
 
         bottomNavigationView.setOnNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.action_home -> {
-
-                    startActivity(Intent(this, RegisterActivity::class.java))
-                    true
+                    startActivity(Intent(this, ProfileActivity::class.java))
+                    true // <-- Importante devolver true aquí
                 }
+                R.id.action_back -> {
+                    onBackPressed()
+                    true // <-- Importante devolver true aquí
+                }
+                R.id.actionLogout -> {
+                    // Cerrar sesión de Firebase
+                    authManager.logout()
 
-                else -> false
+                    // Redirigir a MainScreenActivity
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                    finish() // Opcional: Cierra la actividad actual para que el usuario no pueda volver atrás
+
+                    true // <-- Importante devolver true aquí
+                }
+                else -> onOptionsItemSelected(menuItem)
             }
         }
 

@@ -5,6 +5,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.conexioncomunitaria.model.AuthManager
 import com.google.android.material.bottomappbar.BottomAppBar
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -29,22 +30,36 @@ class DirectorioActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.directorio_screen)
-
+        val authManager = AuthManager()
         imageViewImagen = findViewById(R.id.imageViewImagen)
         textViewTitulo = findViewById(R.id.textViewIcon)
         buttonBack = findViewById(R.id.buttonBack)
         buttonNext = findViewById(R.id.buttonNext)
         bottomAppBar = findViewById(R.id.bottomAppBar)
-        bottomNavigationView = findViewById(R.id.bottomNavigationView)
+        val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
 
         bottomNavigationView.setOnNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.action_home -> {
-
-                    startActivity(Intent(this, RegisterActivity::class.java))
-                    true
+                    startActivity(Intent(this, ProfileActivity::class.java))
+                    true // <-- Importante devolver true aquí
                 }
-                else -> false
+                R.id.action_back -> {
+                    onBackPressed()
+                    true // <-- Importante devolver true aquí
+                }
+                R.id.actionLogout -> {
+                    // Cerrar sesión de Firebase
+                    authManager.logout()
+
+                    // Redirigir a MainScreenActivity
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                    finish() // Opcional: Cierra la actividad actual para que el usuario no pueda volver atrás
+
+                    true // <-- Importante devolver true aquí
+                }
+                else -> onOptionsItemSelected(menuItem)
             }
         }
 
