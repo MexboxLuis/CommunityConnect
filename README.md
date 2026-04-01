@@ -61,7 +61,7 @@ Welcome to the **CommunityConnect** repository. This is a native Android applica
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/CommunityConnect.git
+git clone https://github.com/MexboxLuis/CommunityConnect.git
 cd CommunityConnect
 ```
 
@@ -86,10 +86,5 @@ Once synced, select your emulator or physical device and click **Run (Shift + F1
 
 ## 🎨 Credits
 
-Special thanks to @lamusaliza for the original UI design concepts and visual inspiration used throughout this application.
+Special thanks to [@lamusaliza](https://github.com/lamusaliza) for the original UI design concepts and visual inspiration used throughout this application.
 
----
-
-## 💡 Final Notes
-
-This project demonstrates the implementation of a fully functional Android application using traditional XML layouts, custom UI components, and strict role-based Firebase integration.
