@@ -56,50 +56,44 @@ Welcome to the **CommunityConnect** repository. This is a native Android applica
   <table align="center">
     <tr>
       <td align="center">
-        <img src="assets/register_1.png" width="185"/><br>
-        <sub>Register</sub>
+        <img src="assets/register_1.png" width="190"/><br>
+        <sub>User Register</sub>
       </td>
       <td align="center">
-        <img src="assets/login_1.png" width="185"/><br>
-        <sub>Login</sub>
+        <img src="assets/login_1.png" width="190"/><br>
+        <sub>User Login</sub>
       </td>
       <td align="center">
-        <img src="assets/poll_1.png" width="185"/><br>
-        <sub>Polls</sub>
+        <img src="assets/poll_1.png" width="190"/><br>
+        <sub>Survey Voting</sub>
       </td>
     </tr>
     <tr>
       <td align="center">
-        <img src="assets/directory_1.png" width="185"/><br>
-        <sub>Directory</sub>
+        <img src="assets/directory_1.png" width="190"/><br>
+        <sub>Directory View</sub>
       </td>
       <td align="center">
-        <img src="assets/directory_2.png" width="185"/><br>
-        <sub>Resources</sub>
+        <img src="assets/directory_2.png" width="190"/><br>
+        <sub>Resource Details</sub>
       </td>
       <td align="center">
-        <img src="assets/forum_1.png" width="185"/><br>
-        <sub>Forums</sub>
+        <img src="assets/forum_1.png" width="190"/><br>
+        <sub>Forum Feed</sub>
       </td>
     </tr>
     <tr>
       <td align="center">
-        <img src="assets/forum_2.png" width="185"/><br>
-        <sub>Posts</sub>
+        <img src="assets/forum_2.png" width="190"/><br>
+        <sub>Forum Posts</sub>
       </td>
       <td align="center">
-        <img src="assets/forum_3.png" width="185"/><br>
-        <sub>Filters</sub>
+        <img src="assets/forum_3.png" width="190"/><br>
+        <sub>Post Filters</sub>
       </td>
       <td align="center">
-        <img src="assets/citizen_profile.png" width="185"/><br>
-        <sub>Profile</sub>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="3" align="center">
-        <img src="assets/report_problem.png" width="185"/><br>
-        <sub>Report</sub>
+        <img src="assets/citizen_profile.png" width="190"/><br>
+        <sub>Citizen Profile</sub>
       </td>
     </tr>
   </table>
@@ -111,8 +105,12 @@ Welcome to the **CommunityConnect** repository. This is a native Android applica
   <table align="center">
     <tr>
       <td align="center">
+        <img src="assets/report_problem.png" width="220"/><br>
+        <sub>Problem Report</sub>
+      </td>
+      <td align="center">
         <img src="assets/admin_profile.png" width="220"/><br>
-        <sub>Profile</sub>
+        <sub>Admin Profile</sub>
       </td>
       <td align="center">
         <img src="assets/poll_2.png" width="220"/><br>
@@ -120,7 +118,7 @@ Welcome to the **CommunityConnect** repository. This is a native Android applica
       </td>
       <td align="center">
         <img src="assets/admin_reports.png" width="220"/><br>
-        <sub>Reports</sub>
+        <sub>Review Reports</sub>
       </td>
     </tr>
   </table>
