@@ -50,7 +50,7 @@ Welcome to the **CommunityConnect** repository. This is a native Android applica
 
 ## 📸 Screenshots
 
-### Citizen User
+<h3 align="center">Citizen User</h3>
 
 <div align="center">
   <table align="center">
@@ -85,11 +85,11 @@ Welcome to the **CommunityConnect** repository. This is a native Android applica
     <tr>
       <td align="center">
         <img src="assets/forum_2.png" width="190"/><br>
-        <sub>Forum Posts</sub>
+        <sub>Create Post</sub>
       </td>
       <td align="center">
         <img src="assets/forum_3.png" width="190"/><br>
-        <sub>Post Filters</sub>
+        <sub>Post Created</sub>
       </td>
       <td align="center">
         <img src="assets/citizen_profile.png" width="190"/><br>
@@ -99,7 +99,7 @@ Welcome to the **CommunityConnect** repository. This is a native Android applica
   </table>
 </div>
 
-### Admin User
+<h3 align="center">Admin User</h3>
 
 <div align="center">
   <table align="center">
