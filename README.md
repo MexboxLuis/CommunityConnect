@@ -1,6 +1,6 @@
 # Welcome to CommunityConnect 🏙️
 
-Welcome to the **CommunityConnect** repository. This is a native Android application designed to facilitate neighborhood engagement. It provides a centralized platform for residents to report local issues, participate in community surveys, discuss topics in forums, and explore a directory of local resources.
+Welcome to the **CommunityConnect** repository. This is a native Android application for neighborhood engagement. It allows residents to report local issues, participate in surveys, join community discussions, and explore a directory of local resources.
 
 ---
 
@@ -8,7 +8,7 @@ Welcome to the **CommunityConnect** repository. This is a native Android applica
 
 | Feature                | Details |
 | ---------------------- | ------- |
-| 🎯 **Purpose**         | A platform to connect residents, report neighborhood issues, and manage local community resources efficiently. |
+| 🎯 **Purpose**         | A platform for residents to report neighborhood issues, participate in surveys, join forums, and explore local resources. |
 | ⚙️ **Architecture**     | Built using a multi-activity Android architecture utilizing Kotlin and traditional XML View-based layouts. |
 | 💾 **Data Management** | Real-time data synchronization and role-based access control powered by Firebase Firestore. |
 | 🔄 **Core Operations** | Secure authentication, role-based feature gating (Admin vs. Citizen), dynamic polling, forum discussions, and civic reporting. |
@@ -40,22 +40,83 @@ Welcome to the **CommunityConnect** repository. This is a native Android applica
 
 | Feature | Description |
 |--------|------------|
-| **Role-Based Access** | Built-in logic for 'Citizen' and 'Admin' roles. Admins have exclusive access to create new polls and review all submitted civic reports. |
-| **Interactive Surveys** | Dynamic 4-question polls featuring a custom visual rating scale (0, 5, 10). Includes real-time percentage calculation and result rendering. |
-| **Civic Reporting** | Dedicated forms for citizens to report local problems (Environmental, Security, etc.) with date pickers and detailed descriptions. |
-| **Community Forums** | A space for users to publish and read community discussions, complete with custom sorting/filtering (by User, Date, or Title). |
+| **Role-Based Access** | Supports `Citizen` and `Admin` roles. Admins can create polls and review submitted reports. |
+| **Interactive Surveys** | 4-question polls with a visual rating scale (0, 5, 10), percentage calculation, and result display. |
+| **Civic Reporting** | Forms for reporting local problems (Environmental, Security, etc.) with date selection and detailed descriptions. |
+| **Community Forums** | A space for users to publish and read discussions, with sorting and filtering by user, date, or title. |
 | **Resource Directory** | A categorized local directory (Parks, Offices, Hospitals, Museums) allowing users to quickly find local services and schedules. |
 
 ---
 
 ## 📸 Screenshots
 
-- ![Login & Registration](assets/LoginScreen.jpeg)
-- ![Main Dashboard](assets/MainDashboard.jpeg)
-- ![Interactive Polls](assets/Surveys.jpeg)
-- ![Resource Directory](assets/Directory.jpeg)
+### Citizen User
 
----
+<div align="center">
+  <table align="center">
+    <tr>
+      <td align="center">
+        <img src="assets/register_1.png" width="170"/>
+      </td>
+      <td align="center">
+        <img src="assets/login_1.png" width="170"/>
+      </td>
+      <td align="center">
+        <img src="assets/MainDashboard.jpeg" width="170"/>
+      </td>
+      <td align="center">
+        <img src="assets/poll_1.png" width="170"/>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="assets/Directory.jpeg" width="170"/>
+      </td>
+      <td align="center">
+        <img src="assets/directory_1.png" width="170"/>
+      </td>
+      <td align="center">
+        <img src="assets/directory_2.png" width="170"/>
+      </td>
+      <td align="center">
+        <img src="assets/forum_1.png" width="170"/>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="assets/forum_2.png" width="170"/>
+      </td>
+      <td align="center">
+        <img src="assets/forum_3.png" width="170"/>
+      </td>
+      <td align="center">
+        <img src="assets/citizen_profile.png" width="170"/>
+      </td>
+      <td align="center">
+        <img src="assets/report_problem.png" width="170"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
+### Admin User
+
+<div align="center">
+  <table align="center">
+    <tr>
+      <td align="center">
+        <img src="assets/admin_profile.png" width="180"/>
+      </td>
+      <td align="center">
+        <img src="assets/poll_2.png" width="180"/>
+      </td>
+      <td align="center">
+        <img src="assets/admin_reports.png" width="180"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
 
 ## 🛠️ How to Run Locally
 
